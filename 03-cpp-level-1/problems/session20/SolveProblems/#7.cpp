@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+/*
+    Problem:
+    Write a program to ask the user to enter: • Number
+    Then Print the “Half of the <Number> is <???>”.
+    Example Inputs:
+    60
+    50
+    Outputs ->
+    Half of 60 is 30
+    Half of 50 is 25
+*/
+int main(){
+
+    int Number ;
+
+    cout << "Please Enter The Number: " <<endl;
+    cin >> Number;
+
+    int result = Number /2;
+
+    cout << "Half of " << Number << " is " <<  result <<endl;
+
+
+
+
+}
