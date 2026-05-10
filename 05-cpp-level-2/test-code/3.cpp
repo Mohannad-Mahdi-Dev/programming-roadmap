@@ -20,7 +20,7 @@ int ReadPositiveNumber(string Message)
         cout << Message <<endl;
         cin >> number ;
         
-    }while (number < 0);
+    }while (number <= 0);
     
     return number ;
 }
