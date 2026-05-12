@@ -1,27 +1,40 @@
 #include <iostream>
 using namespace std ;
 
-int ReadNumbers(string Message)
+int ReadPositiveNumber(const string& Message )
 {
-    int Numbers;
-    cout << Message<<endl;
-    cin >> Numbers ;
+    int Number ;
 
-    return Numbers ;
+    do
+    {
+        cout << Message <<endl;
+        cin >> Number ;
+
+    } while (Number <= 0);
+    
+    return Number ;
 }
 
-void PrintDigits(int Number)
+void PrintDigitsInReversedOrder(int Number)
 {
-    int Remainder = 0 ;
- 
+    float Digit = 0 ;
+
     while(Number > 0)
     {
-        Remainder = Number % 10 ;
-        Number = Number / 10 ;
-        cout << Remainder <<endl;
+        Digit =  Number % 10 ;
+
+        cout << Digit <<endl;
+        
+        Number /=  10 ;
+        
     }
 }
+
 int main(){
-    
-    PrintDigits(ReadNumbers("Please enter a Number : "));
+
+    int Number = ReadPositiveNumber("Please Enter a positive number : ");
+
+    PrintDigitsInReversedOrder(Number);
+
+    return 0 ;
 }
