@@ -1,1 +1,1 @@
-PrintResult
+Digit
