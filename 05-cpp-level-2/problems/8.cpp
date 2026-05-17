@@ -18,7 +18,7 @@ using namespace std;  // Use the standard namespace to simplify access to standa
 //          Continues to prompt until the user enters a number greater than zero.
 // Parameter: Message - a string containing the prompt message.
 // Returns: A positive integer entered by the user.
-int ReadPositiveNumber(string Message)
+int ReadPositiveNumber(string Message) // Genric function
 {
     int Number = 0;  // Variable to store the user's input.
     do
